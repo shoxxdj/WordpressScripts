@@ -39,7 +39,8 @@ if(args.wordlist):
 
 		if(test_login(line,args.url,args.falseValue)):
 			print "Found a valid login with : %s"%(line)
-			sys.exit(1)
+			# sys.exit(1)
+                        line = file.readline() # Read next line
 		else:
 			line = file.readline()
 	file.close()
